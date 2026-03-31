@@ -1,0 +1,45 @@
+body{
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color:blue;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:50px;
+}
+.leftside,
+.rightside{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 400px;
+    height:400px;
+}
+
+.square{
+    border:solid;
+    border-radius: 0.5px;
+    border-color: black;
+    background-color: antiquewhite;
+}
+
+.human_ship{
+    background-color:aqua;
+}
