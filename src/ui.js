@@ -94,6 +94,7 @@ export function show_winner(winner){
     
 }
 
+
 export function click_randomize(){
     const btn_rand = document.querySelector('.rand_button');
     btn_rand.addEventListener('click', (e)=>{
