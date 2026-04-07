@@ -48,7 +48,8 @@ export function start_main(){
     const ship2 = ship_creation();
     const reset_btn = document.querySelector('.reset_button');
     reset_btn.disabled = true;
-
+    const winner_announcement = document.querySelector('.winner_announcement');
+    winner_announcement.innerHTML = '';
     //populating the board.
     ship_placement(p1, ship1);
     ship_placement(p2, ship2);
