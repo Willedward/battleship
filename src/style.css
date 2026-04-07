@@ -1,0 +1,139 @@
+body{
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color:blue;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:40px;
+}
+.leftside,
+.rightside{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:75px;
+    margin-right:75px;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 400px;
+    height:400px;
+}
+
+.square{
+    border:solid;
+    border-radius: 0.5px;
+    border-color: black;
+    background-color: antiquewhite;
+}
+
+.human_ship{
+    background-color:aqua;
+}
+
+.square.miss{
+    background-color:black;
+}
+
+.square.sunk{
+    background-color: red;
+}
+
+.right_hem,
+.left_hem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_title,
+.right_title{
+    margin:30px;
+    font-size:25px;
+    font-weight: 550;
+}
+
+.winner{
+    color:black;
+    font-size:28px;
+    margin:15px;
+}
+
+.rand_button,
+.reset_button{
+    font-size:20px;
+    padding:8px;
+    border-radius: 6px;
+    background-color: rgb(0, 255, 30);
+    color:rgb(29, 29, 29);
+    margin:12px;
+    border:none;
+}
+.mid_hem{
+    display:flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.display_box{
+    width:350px;
+    background-color:transparent;
+    border-color:none;
+    border:none;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box_left,
+.box_right{
+    width:125px;
+    height:100px;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    color:white;
+    font-size:18px;
+}
+
+.remaining_num_human,
+.remaining_num_cp{
+    font-size:22px;
+    font-weight:550;
+    margin-top:12px;
+}
+
+.box_left{
+    background-color: rgb(2, 2, 79);;
+}
+
+.box_right{
+    background-color: rgba(105, 0, 0);
+}
+
+.titling{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.disabled{
+    opacity:0.8;
+}
